@@ -1,0 +1,366 @@
+<div id={{ charIndex }} class="charBox">
+		
+	 <!-- Name/Level -->
+	<div id="namebox" class="statBoxContainer"><div class="statBox">
+	    <div class="stat tableHeader">
+	        <div class="statCell statName TL">Info</div>
+	        <div class="statCell statInputWide TR"></div>    
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Name</div>
+	        <div class="statCell statInputWide"><input type="text" id="charName"/></div>    
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Level</div>
+	        <div class="statCell statInputWide"><input  type="number" min="1" max="99" id="charLevel"/></div>
+	    </div>
+	</div></div>
+	
+	<!-- Weapon/Armor -->
+	<div id="weaponArmor" class="statBoxContainer"><div class="statBox">
+	    <div class="stat tableHeader">
+	        <div class="statCell statName TL">Equipment</div>
+	        <div class="statCell statInput TR"></div>
+	    </div> 
+	    <div class="stat">
+	        <div class="statCell statName">Weapon</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="0" max="255" id="Weapon"/>
+	        </div>
+	    </div>    
+	    <div class="stat">
+	        <div class="statCell statName">Armor</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="0" max="255" id="Armor"/>
+	        </div>
+	    </div>
+	</div></div>
+	
+	<br/>
+	
+	<!-- Primary Stats -->
+	<div id="primary" class="statBoxContainer"><div class="statBox" >
+	    <div class="stat tableHeader">
+	        <div class="statCell statName TL"></div>
+	        <div class="statCell statInput">Rating</div>
+	        <div class="statCell statValue">Base</div>
+	        <div class="statCell statValue">Current</div>
+	        <div class="statCell statInput">Bonus</div>
+	        <div class="statCell statValue TR">Final</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Strength</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="0" max="10" id="ratingStrength"/>
+	        </div>
+	        <div class="statCell statValue" id="baseStrength">0</div>
+	        <div class="statCell statValue" id="currentStrength">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusStrength"/>
+	        </div>
+	        <div class="statCell statValue" id="finalStrength">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Agility</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="0" max="10" id="ratingAgility"/>
+	        </div>
+	        <div class="statCell statValue" id="baseAgility">0</div>
+	        <div class="statCell statValue" id="currentAgility">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusAgility"/>
+	        </div>
+	        <div class="statCell statValue" id="finalAgility">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Vitality</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="0" max="10" id="ratingVitality"/>
+	        </div>
+	        <div class="statCell statValue" id="baseVitality">0</div>
+	        <div class="statCell statValue" id="currentVitality">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusVitality"/>
+	        </div>
+	        <div class="statCell statValue" id="finalVitality">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Intelligence</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="0" max="10" id="ratingIntelligence" vaue="123"/>
+	        </div>
+	        <div class="statCell statValue" id="baseIntelligence">0</div>
+	        <div class="statCell statValue" id="currentIntelligence">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusIntelligence"/>
+	        </div>
+	        <div class="statCell statValue" id="finalIntelligence">0</div>
+	    </div>
+	</div></div>
+	
+	<!-- Affinity -->
+	<div id="affinity" class="statBoxContainer"><div class="statBox" >
+	    <div class="stat tableHeader">
+	        <div class="statCell statName TL"></div>
+	        <div class="statCell statValue">Base</div>
+	        <div class="statCell statInput">Bonus</div>
+	        <div class="statCell statValue TR">Final</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Fire</div>
+	        <div class="statCell statValue" id="baseFire">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusFire"/>
+	        </div>
+	        <div class="statCell statValue" id="finalFire">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Earth</div>
+	        <div class="statCell statValue" id="baseEarth">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusEarth"/>
+	        </div>
+	        <div class="statCell statValue" id="finalEarth">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Wind</div>
+	        <div class="statCell statValue" id="baseWind">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusWind"/>
+	        </div>
+	        <div class="statCell statValue" id="finalWind">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Water</div>
+	        <div class="statCell statValue" id="baseWater">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusWater"/>
+	        </div>
+	        <div class="statCell statValue" id="finalWater">0</div>
+	    </div>
+	</div></div>
+	
+	<br/>
+	
+	<!-- Secondary Stats -->
+	<div id="secondary" class="statBoxContainer"><div class="statBox">
+	    <div class="stat tableHeader">
+	        <div class="statCell statName TL"></div>
+	        <div class="statCell statValue">Base</div>
+	        <div class="statCell statInput">Bonus</div>
+	        <div class="statCell statValue TR">Final</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Max HP</div>
+	        <div class="statCell statValue" id="baseHP">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-9999" max="9999" id="bonusHP"/>
+	        </div>
+	        <div class="statCell statValue" id="finalHP">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Max MP</div>
+	        <div class="statCell statValue" id="baseMP">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-999" max="999" id="bonusMP"/>
+	        </div>
+	        <div class="statCell statValue" id="finalMP">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Power</div>
+	        <div class="statCell statValue" id="basePower">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusPower"/>
+	        </div>
+	        <div class="statCell statValue" id="finalPower">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Defense</div>
+	        <div class="statCell statValue" id="baseDefense">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusDefense"/>
+	        </div>
+	        <div class="statCell statValue" id="finalDefense">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Magic Power</div>
+	        <div class="statCell statValue" id="baseMagicPower">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusMagicPower"/>
+	        </div>
+	        <div class="statCell statValue" id="finalMagicPower">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Magic Defense</div>
+	        <div class="statCell statValue" id="baseMagicDefense">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusMagicDefense"/>
+	        </div>
+	        <div class="statCell statValue" id="finalMagicDefense">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Speed</div>
+	        <div class="statCell statValue" id="baseSpeed">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusSpeed"/>
+	        </div>
+	        <div class="statCell statValue" id="finalSpeed">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Evade</div>
+	        <div class="statCell statValue" id="baseEvade">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusEvade"/>
+	        </div>
+	        <div class="statCell statValue" id="finalEvade">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Block</div>
+	        <div class="statCell statValue" id="baseBlock">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusBlock"/>
+	        </div>
+	        <div class="statCell statValue" id="finalBlock">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Nullify</div>
+	        <div class="statCell statValue" id="baseNullify">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusNullify"/>
+	        </div>
+	        <div class="statCell statValue" id="finalNullify">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Ferocity</div>
+	        <div class="statCell statValue" id="baseFerocity">0</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" min="-255" max="255" id="bonusFerocity"/>
+	        </div>
+	        <div class="statCell statValue" id="finalFerocity">0</div>
+	    </div>
+	</div></div>
+	
+	
+	
+	<!-- Attack Options -->
+	<div id="atkOptions" class="statBoxContainer"><div class="statBox" >
+	    <div class="stat tableHeader">
+	        <div class="statCell statName TL">Attack&nbsp;Options</div>
+	        <div class="statCell TR"></div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Target</div>
+	        <div class="statCell statInput">
+	            <select id="target">
+	            </select>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Power</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" id="attackPower"/>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Damage Type</div>
+	        <div class="statCell statInput">
+	            <select id="damageType">
+	                <option value="p">Physical</option>
+	                <option value="m">Magical</option>
+	            </select>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Guarding</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="checkbox" id="guarding"/>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Ignore Defense</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="checkbox" id="ignoreDef"/>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Fire %</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" id="fireCOmponent"/>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Earth %</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" id="earthComponent"/>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Wind %</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" id="windComponent"/>
+	        </div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Water %</div>
+	        <div class="statCell statInput">
+	            <input class="num" type="number" id="waterComponent"/>
+	        </div>
+	    </div>
+	</div></div>
+	
+	<!-- Damage Readout -->
+	<div id="atkOptions" class="statBoxContainer"><div class="statBox" >
+	    <div class="stat tableHeader">
+	        <div class="statCell statName TL">Damage&nbsp;Readout</div>
+	        <div class="statCell TR"></div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Base Damage</div>
+	        <div class="statCell statValue" id="outBaseDamage">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Neutral Component</div>
+	        <div class="statCell statValue" id="outNeutralComponent">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Fire Component</div>
+	        <div class="statCell statValue" id="outFireComponent">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Earth Component</div>
+	        <div class="statCell statValue" id="outEarthComponent">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Wind Component</div>
+	        <div class="statCell statValue" id="outWindComponent">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Water Component</div>
+	        <div class="statCell statValue" id="outWaterComponent">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Final Damage</div>
+	        <div class="statCell statValue" id="outFinalDamage">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Defensive Reduction</div>
+	        <div class="statCell statValue" id="outDefensiveReductions">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Miss Chance</div>
+	        <div class="statCell statValue" id="outMissChance">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Blocked Chance</div>
+	        <div class="statCell statValue" id="outBlockedChance">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Critical Chance</div>
+	        <div class="statCell statValue" id="outCritChance">0</div>
+	    </div>
+	    <div class="stat">
+	        <div class="statCell statName">Average Damage</div>
+	        <div class="statCell statValue" id="outAverageDamage">0</div>
+	    </div>        
+	</div></div>
+</div>

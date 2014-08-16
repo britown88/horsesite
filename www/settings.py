@@ -12,12 +12,22 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+TEMPLATE_DIRS = (
+    BASE_DIR + '/templates/',
+)
+
+MEDIA_ROOT = BASE_DIR + '/media/'
+MEDIA_URL = 'media/'
+
+STATIC_ROOT = ''
+STATIC_URL = 'static/'
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '1$_2x*u@z%%rs(ualuzg1vbfpcazl!&+p86====phd6oo3w28$'
+SECRET_KEY = 'hp8+4a-o2^-9b)$+rt5_3r+do5gia(s=a%+hiphx_0_+)8*y49'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,6 +46,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'dhsite', 'bqsite', 'horse',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -45,9 +56,16 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middleware.SubdomainsMiddleware'
 )
 
-ROOT_URLCONF = 'www.urls'
+ROOT_URLCONF = 'dhsite.urls'
+
+URLCONF = {
+	'(.*\.)?bladequest\.net' : 'bqsite.urls',
+	'(.*\.)?bladequest\.dapperhat\.net' : 'bqsite.urls',
+    '(.*\.)?studio-horse\.com' : 'dhsite.urls'
+}
 
 WSGI_APPLICATION = 'www.wsgi.application'
 
@@ -76,7 +94,4 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'

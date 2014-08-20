@@ -5,4 +5,5 @@ urlpatterns = patterns('',
 	(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT }),
 	#(r'^gitstats/(?P<path>.*)$', 'django.views.static.serve', {'document_root': 'srv/django/dapperhat/templates/dhsite/gitstats/' }),
 	url(r'^$', 'dhsite.views.index'),
+	url(r'^dillodash/?$', 'dhsite.views.ddash'),
 )

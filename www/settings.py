@@ -64,7 +64,8 @@ ROOT_URLCONF = 'dhsite.urls'
 URLCONF = {
 	'(.*\.)?bladequest\.net' : 'bqsite.urls',
 	'(.*\.)?bladequest\.dapperhat\.net' : 'bqsite.urls',
-    '(.*\.)?studio-horse\.com' : 'dhsite.urls'
+    '(.*\.)?studio-horse\.com' : 'dhsite.urls',
+    '(.*\.)?dillodash\.studio-horse\.com' : 'ddash.urls'
 }
 
 WSGI_APPLICATION = 'www.wsgi.application'

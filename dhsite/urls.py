@@ -6,4 +6,5 @@ urlpatterns = patterns('',
 	#(r'^gitstats/(?P<path>.*)$', 'django.views.static.serve', {'document_root': 'srv/django/dapperhat/templates/dhsite/gitstats/' }),
 	url(r'^$', 'dhsite.views.index'),
 	url(r'^dillodash/?$', 'dhsite.views.ddash'),
+    url(r'^pointbuy/?$', 'dhsite.views.pointbuy'),
 )

@@ -1,0 +1,117 @@
+<head>
+    <style>
+    .table
+    {
+        display: table;
+    }
+
+    .row
+    {
+        display: table-row;
+    }
+
+    .cell
+    {
+        display: table-cell;
+        padding: 0px 2px 0px 2px;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    var totalScore = 0;
+
+    function modifyScore(elem, modifier)
+    {
+        var intScore = parseInt(elem.text());
+        var futureScore = intScore + modifier;
+
+        if(futureScore >= 8 && futureScore <= 15)
+        {
+            if(modifier > 0)
+            {
+                var cost = futureScore >= 14 ? 2 : 1;
+                if(totalScore + cost > 27)
+                    return;
+                
+                totalScore += cost;
+            }
+            else
+            {
+                var cost = futureScore >= 13 ? 2 : 1;
+                totalScore -= cost;
+            }
+            
+            elem.text(futureScore);
+            $(".total").text(totalScore)
+        }
+    }
+
+    function add()
+    {
+        var s = $(this).parents(".row").children("#score");
+        modifyScore(s, 1);
+        
+    }
+
+    function subtract()
+    {
+        var s = $(this).parents(".row").children("#score");
+        modifyScore(s, -1);
+    }
+    
+    $(document).ready(function()
+    {   
+        $( ".add" ).click(add);
+        $( ".subtract" ).click(subtract);
+        
+        
+    });
+
+    
+    </script>
+
+</head>
+<body>
+    <div class="table" >
+        <div class="row">
+            <div class="cell">STR</div>
+            <div class="cell"><input type="button" class="subtract" value="-"/></div>
+            <div class="cell"><input type="button" class="add" value="+"/></div>     
+            <div class="cell" id="score">8</div>
+        </div>  
+        <div class="row">
+            <div class="cell">DEX</div>
+            <div class="cell"><input type="button" class="subtract" value="-"/></div>
+            <div class="cell"><input type="button" class="add" value="+"/></div>     
+            <div class="cell" id="score">8</div>
+        </div> 
+        <div class="row">
+            <div class="cell">CON</div>
+            <div class="cell"><input type="button" class="subtract" value="-"/></div>
+            <div class="cell"><input type="button" class="add" value="+"/></div>     
+            <div class="cell" id="score">8</div>
+        </div> 
+        <div class="row">
+            <div class="cell">INT</div>
+            <div class="cell"><input type="button" class="subtract" value="-"/></div>
+            <div class="cell"><input type="button" class="add" value="+"/></div>     
+            <div class="cell" id="score">8</div>
+        </div> 
+        <div class="row">
+            <div class="cell">WIS</div>
+            <div class="cell"><input type="button" class="subtract" value="-"/></div>
+            <div class="cell"><input type="button" class="add" value="+"/></div>     
+            <div class="cell" id="score">8</div>
+        </div> 
+        <div class="row">
+            <div class="cell">CHA</div>
+            <div class="cell"><input type="button" class="subtract" value="-"/></div>
+            <div class="cell"><input type="button" class="add" value="+"/></div>     
+            <div class="cell" id="score">8</div>
+        </div> 
+    </div>
+
+    <div class="total">0</div>
+    
+
+</body>

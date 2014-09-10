@@ -6,4 +6,7 @@ def index(request):
 
 def ddash(request):
     return render_to_response('ddash/index.html')
+    
+def pointbuy(request):
+    return render_to_response('dhsite/pointbuy.html')
 

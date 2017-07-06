@@ -65,7 +65,8 @@ URLCONF = {
 	'(.*\.)?bladequest\.net' : 'bqsite.urls',
 	'(.*\.)?bladequest\.dapperhat\.net' : 'bqsite.urls',
     '(.*\.)?studio-horse\.com' : 'dhsite.urls',
-    '(.*\.)?dillodash\.studio-horse\.com' : 'ddash.urls'
+    '(.*\.)?dillodash\.studio-horse\.com' : 'ddash.urls',
+    '(.*\.)?tapewagon\.com' : 'tapewagon.urls'
 }
 
 WSGI_APPLICATION = 'www.wsgi.application'
@@ -93,6 +94,3 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
-

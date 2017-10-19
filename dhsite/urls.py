@@ -10,5 +10,6 @@ urlpatterns = patterns('',
 	url(r'^dillodash/?$', 'dhsite.views.ddash'),
     url(r'^pointbuy/?$', 'dhsite.views.pointbuy'),
     url(r'^exodus/?$', 'dhsite.views.exodus'),
+	url(r'^websight/?$', 'dhsite.views.websight'),
     url(r'^exodus/update$', 'dhsite.views.exodusUpdate'),
 )

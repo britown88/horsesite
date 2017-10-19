@@ -22,6 +22,9 @@ def pointbuy(request):
 def exodus(request):
     return render_to_response('dhsite/exodus.html')
 
+def websight(request):
+    return render_to_response('dhsite/websight.html')
+
 @csrf_exempt
 def exodusUpdate(request):
     if request.is_ajax():

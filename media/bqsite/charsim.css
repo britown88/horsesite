@@ -1,0 +1,160 @@
+body
+{
+	text-align: center;
+}
+
+a.addButton
+{
+	background-color:#A0A0A0 ;
+    color:white;
+    text-shadow:1px 1px 4px #000000;    
+    border-radius:15px;
+    
+    margin:10px;
+    //padding:5px;
+    font-size:16px;
+    
+
+}
+
+div.charRow
+{
+	padding:5px;
+	font-size:12px;
+	
+
+	background-color:#A0A0A0 ;
+    color:white;
+    text-shadow:1px 1px 4px #000000;    
+    border-radius:15px;
+	
+	margin:3px;
+	
+	display: inline-block;
+	text-align:center;
+	overflow: auto;
+}
+
+div.charRowItem
+{
+	display:inline-block;
+}
+
+div.controlHeaderRow
+{
+	font-family:"Arial Black";
+	font-size: 24px;
+
+}
+
+div.charBox#charBoxHeader
+{
+	width:600px;
+	padding:5px;
+}
+
+div.charBox
+{
+	display: inline-block;
+	
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border-style:solid;
+    border-color:#A0A0A0 ;
+    border-width:2px;
+    background-color:#E0E0E0;
+
+    overflow: auto;
+    text-align: center;
+    
+    margin:3px;
+    
+    
+}
+
+div.statBoxContainer
+{
+	margin:5px;
+    display:inline-block;
+    vertical-align:top;
+}    
+
+div.statBox
+{
+    background-color:#FFFFFF;
+    display:table;  
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border-style:solid;
+    border-color:#A0A0A0 ;
+    border-width:1px;
+}
+
+div.stat
+{
+    display:table-row;
+    clear:both;
+    
+   
+}
+
+div.statCell
+{
+    display:table-cell;  
+    vertical-align:middle;  
+    padding:0px 3px 0px 3px;
+
+}
+
+div.statName
+{
+    /*width: 110px;*/
+    text-align:right;
+    font-weight:bold;
+}
+
+div.statInput
+{
+    text-align:center;
+    width: 40px;
+}
+
+div.statInputWide
+{
+    text-align:center;
+    width: 110px;
+}
+
+div.statValue
+{
+    text-align: center;
+    width: 30px;
+
+}
+
+div.tableHeader
+{
+    background-color:#A0A0A0 ;
+    color:white;
+    text-shadow:1px 1px 4px #000000;
+    border-style:solid;
+    border-color:#FFFFFF ;
+    border-width:2px;
+
+}
+
+div.TL{
+    -moz-border-top-left-radius: 15px;
+    border-top-left-radius: 15px;}
+div.TR{
+    -moz-border-top-right-radius: 15px;
+    border-top-right-radius: 15px;}
+
+input{ background-color:#E0E0E0;}
+select{ background-color:#E0E0E0;}
+
+input.num
+{
+    width:50px;
+}
+

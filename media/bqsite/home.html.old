@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="icon" href="icon.ico" type="image/x-icon">
+<link rel="Shortcut Icon" href="icon.ico">
+
+<style type="text/css">
+body
+{
+	background-color: #191919;
+}
+ .cntrBckgrnd
+ {	
+     display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 margin-top: -15px;
+ }
+ 
+ .textMain
+ {
+	 display: block;
+	 width: 500px;
+	 margin-left: auto;
+	 margin-right:auto;
+	 color: white;
+	 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	 margin-top: -500px;
+	 
+ }
+ 
+ .textFollow
+ {
+	 display: block;
+	 width: 500px;
+	 margin-left: auto;
+	 margin-right:auto;
+	 color: white;
+	 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	 margin-top: 85px;
+	 text-align: center;
+ }
+ 
+ .social
+ {
+	 display: block;
+	 width: 500px;
+	 margin-left: auto;
+	 margin-right:auto;
+	 color: white;
+	 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	 margin-top: 100px;
+	 text-align: center;
+	
+ }
+</style>
+
+<title>Home of Bladequest</title>
+
+</head>
+
+<body>
+
+	<img src="BQ_HomePage.png"g" class="cntrBckgrnd"/>
+    
+    <div class="textMain">
+    	BladeQuest is an original throwback to classic RPGs for the Android platform.  It is being developed by Dapper Hat Games, a team consisting of one coder, one artist, and one musician.  Our goal is to recreate the nostalgia of old RPGs with a focus on the good memories while introducing some touch-screen specific control.
+
+The fist playable demo is available for free on the Android Market.
+    </div>
+    
+    
+    <div class="textFollow"> 
+    	<img src="android-logo-white.png" /> Download the Demo on the Android Market. <br />
+    </div>
+    
+    <div class="social">
+    	Follow us for frequent development updates:<br />
+    	<a href="http://www.facebook.com/bladequest" target="_blank"> <img src="fb-icon.png" /> </a> &nbsp;
+        <a href="http://mortalparody.tumblr.com" target="_blank"> <img src="tumblr.png" /> </a>
+        
+    </div>
+    
+</body>
+
+</html>
